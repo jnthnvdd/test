@@ -1,1 +1,28 @@
-test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Letter for You ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dear Love,</h1>
+        <p id="message">💌 Tap below to reveal your love letter...</p>
+        <button onclick="openModal()">💌 Read Love Letter</button>
+        <button onclick="showConfetti()">🎊 Surprise Me</button>
+    </div>
+
+    <!-- Love Letter Modal -->
+    <div id="loveModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Hi my lab!!</h2>
+            <p id="modalMessage"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom, #ff758c, #ff7eb3);
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 350px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+p {
+    font-size: 20px;
+}
+
+button {
+    background: white;
+    color: #ff4b6e;
+    border: none;
+    padding: 14px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: 0.3s;
+    width: 90%;
+}
+
+button:hover {
+    background: #ff4b6e;
+    color: white;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Ensure it’s hidden initially */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.modal-content {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 350px;
+    max-height: 80vh;  /* Allows scrolling inside the modal */
+    overflow-y: auto;   /* Enables vertical scrolling if content is too long */
+    animation: fadeIn 0.3s ease-in-out;
+    position: relative;
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* iPhone X Optimization */
+@media screen and (max-width: 375px) and (max-height: 812px) {
+    h1 { font-size: 22px; }
+    p { font-size: 18px; }
+    button { font-size: 16px; padding: 12px; }
+}
